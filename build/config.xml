@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://www.obigo.com/ces2020/OBIGO/C300/podcast" version="1.5.73" viewmodes="fullscreen" restore="true">
+  <description>팟빵은 오디오 콘텐츠 플랫폼 팟빵에서 출시한 공식 앱입니다. 내가 원하는 팟캐스트를 검색하여 재생 할 수 있습니다.</description>
+  <icon src="icon.png"/>
+  <author>Obigo</author>
+  <license>Obigo</license>
+  <content src="index.html" type="text/html"/>
+  <name short="팟빵">팟캐스트 플레이어</name>
+  <access origin="*"/>
+  <gadgets>
+    <gadget size="l" description="최근 재생 에피소드" name="podcast-main" category="main" required="true">
+      <content src="gadgets/main/index.html" type="text/html"/>
+    </gadget>
+    <gadget size="s" description="최근 재생 에피소드/인기방송" name="podcast-sub-1" category="sub" required="true">
+      <content src="gadgets/sub-1/index.html" type="text/html"/>
+    </gadget>
+  </gadgets>
+  <feature name="http://www.obigo.com/api/applicationmanager.getownerapplication" required="true">
+    <param name="version" value="3.1.5.6"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/storage" required="true">
+    <param name="version" value="1.1.0.0"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/network" required="true">
+    <param name="version" value="1.1.0.0"/>
+    <param name="connectionType" value="m2m-sym-info2.lguplus.co.kr"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/audio" required="true">
+    <param name="version" value="1.1.0.0"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/ai" required="true">
+    <param name="version" value="1.0.1.8"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/cloud" required="true">
+    <param name="version" value="1.0.1.7"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/serviceAgent" required="true">
+    <param name="version" value="1.0.1.22"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/cluster" required="true">
+    <param name="version" value="1.0.1.5"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/developer" required="true">
+    <param name="version" value="1.0.0.2"/>
+  </feature>
+  <feature name="http://www.obigo.com/api/telephony" required="true">
+    <param name="version" value="1.1.1.5"/>
+  </feature>
+  <meta-data>
+    <manifest-version>1.3.1.1</manifest-version>
+    <speech>
+      <name>podcast</name>
+    </speech>
+  </meta-data>
+</widget>

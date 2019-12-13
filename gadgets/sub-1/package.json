@@ -1,0 +1,26 @@
+{
+  "name": "Obigo-js-framework-sub-1",
+  "version": "0.0.1",
+  "description": "template",
+  "author": "support@obigo.com",
+  "private": true,
+  "scripts": {
+    "start": "node build.config/dev-server.js",
+    "dev": "node build.config/dev-server.js",
+    "build": "node build.config/build.js",
+    "build:dev": "node build.config/build.dev.js",
+    "build:debug": "node %NODE_DEBUG_OPTION% build.config/build.js",
+    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
+    "e2e": "node test/e2e/runner.js",
+    "test": "npm run unit && npm run e2e",
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

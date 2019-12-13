@@ -1,0 +1,29 @@
+{
+    "spaceUnits": 2,
+    "insertHintOnTab": true,
+    "closeBrackets": true,
+    "linting.enabled": true,
+    "language": {
+        "javascript": {
+            "linting.prefer": "ESLint",
+            "linting.usePreferredOnly": true
+        }
+    },
+    "jwolfe.file-tree-exclude.list": [
+        "_SCRIPT_C_",
+        "build",
+        "node_modules",
+        "obigo_lib",
+        "obigo_update",
+        "report"
+    ],
+    "obigo-studio.app-tools.signatureCertificate": "OB.Obigo-SY.SsangyongLv1",
+    "obigo-studio.app-tools.cmsCertificate": "Assim",
+    "obigo-studio.app-tools.signatureAccessLevel": "",
+    "obigo-studio.app-tools.buildOption": "build:all",
+    "obigo-studio.app-tools.contentsEncrypt": false,
+    "obigo-studio.app-tools.runTarget": "device.root@10.28.2.232",
+    "obigo-studio.app-tools.installTarget": "",
+    "obigo-studio.app-tools.remoteDebuggingTarget": "",
+    "obigo-studio.app-tools.buildMode": "development"
+}
